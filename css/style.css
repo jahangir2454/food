@@ -10,6 +10,9 @@ body{
     font-family: 'Roboto',
     sans-serif;
 }
+a{
+    text-decoration: none;
+}
 :root{
     --main-color:#f6f6f6;
     --btn-color:#4da03f;
@@ -19,6 +22,7 @@ body{
 /* =============================== */
 /* main heading part start  */
 /* =============================== */
+
 .my-nav ul li{
     margin: 0 10px;
 }
@@ -73,6 +77,10 @@ body{
 /* =============================== */
 /* main heading part end  */
 /* =============================== */
+
+/* =============================== */
+/* banner css part start  */
+/* =============================== */
 .banner {
     background:url(../imges/banner2.jpg);
     width: 100%;
@@ -97,7 +105,7 @@ body{
  font-weight:600;
 }
 .banner-content h1 span{
- color:rgb(37, 145, 121);
+ color:var(--btn-color);
 }
 .banner-content p{
     font-size: 16px;
@@ -119,11 +127,6 @@ body{
     color:#fff;
 }
 /* =============================== */
-/* banner css part start  */
-/* =============================== */
-
-
-/* =============================== */
 /* banner css part end  */
 /* =============================== */
 
@@ -131,10 +134,249 @@ body{
 
 
 
+/* =============================== */
+/* Categories css part start  */
+/* =============================== */
+#Categories{
+    margin:40px 0;
+}
+.categories-heading span{
+    color:var(--btn-color);
+}
+.categories-card{
+    overflow: hidden;
+   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    transition:0.5s ease-in-out;
+    border-radius:10px;
+    position: relative;
+}
+.categories-card:hover{
+ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.categories-icons{
+    position: absolute;
+    top: 1%;
+    right: -10%;
+    z-index: 10;
+    transition: 0.5s ease-in-out;
+}
+.categories-card:hover .categories-icons{
+    opacity: 1;
+    right:6%;
+}
+.categories-icons a{
+    display: block;
+    font-size:20px;
+    color:var(--btn-color)
+}
+.categories-icons a i{
+    transition: 0.5s ease-in-out;
+}
+.categories-icons a i:hover{
+    color: #ff7200;
+    transform: rotate(360deg);
+}
+.sale{
+  background:#ff7200;
+}
+.sale2,
+.sale{
+    position: absolute;
+    top: 50%;
+    left: 4%;
+    height:70px;
+    width: 70px;
+    border-radius:50%;
+    text-align:center; 
+    z-index: 10;
+    transform:translatex(0);
+    transition: 0.5s ease-in-out;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    
+}
+.sale2{
+    background:#0068ff;
+}
+.categories-card:hover .sale2,
+.categories-card:hover .sale{
+    transform:translatex(-50px);
+    opacity:0;
+}
+.sale2 h3{
+    padding-top:20px;
+    font-size:17px;
+    color: #f6f6f6;
+}
+.sale h3{
+    font-size:17px;
+    color: #f6f6f6;
+    padding-top:10px;
+}
+.categories-img{
+    background:url(../imges/img1.jpg);
+}
+.categories-img{
+ height:100%;
+ width: 100%;
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ transition: 0.5s;
+ z-index: 1;
+}
+.categories-img8:hover,
+.categories-img7:hover,
+.categories-img6:hover,
+.categories-img5:hover,
+.categories-img4:hover,
+.categories-img3:hover,
+.categories-img2:hover,
+.categories-img:hover{
+transform: scale(0.9);
+}
+.categories-card img{
+    transition: 0.5s;
+    cursor: pointer;
+}
+.categories-card:hover img{
+    opacity: 0;
+}
+.categories-content i{
+    font-size:14px;
+    color: #ffd400;
+    margin-bottom: 5px;
+}
+.categories-content h3{
+    color: #b4b4b4;
+    font-size:16px;
+    font-weight:400;
+    padding:0;
+    margin: 0;
+}
+.categories-content p{
+    transition: 0.5s;
+    padding:0;
+    margin: 0;
+}
+.categories-content p:hover{
+    color: var(--btn-color);
+    cursor: pointer;
+}
+.categories-card:hover .categories-content h6{
+    transform: translatey(10px);
+    opacity: 0;
+}
+.categories-content h6{
+    transform: translatey(30px);
+    transition: 0.5s;
+}
+.categories-content h6 span{
+    text-decoration: line-through;
+    font-size:14px;
+    font-weight:300;
+    color: #b4b4b4;
+
+}
+.categories-content button{
+    border: none;
+    background:none;
+    font-weight: 600;
+    outline: none;
+    padding: 14px 22px;
+    border-radius:20px;
+    color: #fff;
+    background: var(--btn-color);
+    transform: translatey(-20px);
+    opacity: 0;
+    transition: 0.5s;
+}
+.categories-card:hover .categories-content button{
+    opacity: 1;
+    transform: translatey(-8px);
+}
+.categories-img2{
+    background:url(../imges/jebin.jpg);
+     height:100%;
+     width: 100%;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     transition: 0.5s;
+     z-index: 1;
+}
+.categories-img3{
+    background:url(../imges/product-03-2.webp);
+     height:100%;
+     width: 100%;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     transition: 0.5s;
+     z-index: 1;
+}
+.categories-img4{
+    background:url(../imges/product-04-2.webp);
+    height:100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.5s;
+    z-index: 1;
+}
+.categories-img5{
+    background:url(../imges/product-05-2.webp);
+    height:100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.5s;
+    z-index: 1;
+}
+.categories-img6{
+    background:url(../imges/product-06-2.webp);
+    height:100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.5s;
+    z-index: 1;
+}
+.categories-img7{
+    background:url(../imges/product-07-2.webp);
+    height:100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.5s;
+    z-index: 1;
+}
+.categories-img8{
+    background:url(../imges/product-08-2.webp);
+    height:100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.5s;
+    z-index: 1;
+}
+/* =============================== */
+/* Categories css part end  */
+/* =============================== */
 
 
-
-
+/* =============================== */
+/* Categories css part end  */
+/* =============================== */
+/* =============================== */
+/* Categories css part end  */
+/* =============================== */
 
 
 
