@@ -140,6 +140,8 @@ a{
 #Categories{
     margin:40px 0;
 }
+.tomatoes-content span,
+.food-heaven-item span,
 .categories-heading span{
     color:var(--btn-color);
 }
@@ -372,15 +374,113 @@ transform: scale(0.9);
 
 
 /* =============================== */
-/* Categories css part end  */
+/* Food Heaven css part start  */
+/* =============================== */
+.section{
+    background:#fbfbfb;
+}
+.food-heaven-item h2{
+    font-size:35px;
+    letter-spacing:1px;
+}
+.food-heaven-item{
+    font-size:17px;
+    color: #484848;
+    line-height: 34px;
+}
+.food-heaven-item2 {
+    width: 160px;
+    height:55px;
+    border:none;
+    outline: none;
+    background:none;
+    background:var(--btn-color);
+    border-radius:10px;
+    color: #fff;
+    font-weight: 600;
+    transition: 0.5s ease-in-out;
+}
+.food-heaven-item2:hover{
+    background:#111111;
+}
+/* =============================== */
+/* Food Heaven css part end  */
+/* =============================== */
+
+
+
+/* =============================== */
+/* About Us css part start  */
+/* =============================== */
+.about-content{
+    height:220px;
+    width: 220px;
+    padding-top:15px;
+    border-radius:50%;
+    background: #fff;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px,
+    rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    transition: 0.5s;
+}
+.about-content:hover i{
+    color: var(--btn-color);
+}
+.about-content h3{
+    transition: 0.5s;
+}
+.about-content:hover h3{
+     color: var(--btn-color);
+}
+.about-content i{
+    font-size:60px;
+    margin-bottom: 10px;
+    color:#484848;
+    transition: 0.5s;
+}
+/* =============================== */
+/* About Us css part end  */
+/* =============================== */
+
+
+/* =============================== */
+/* Tomatoes css part start  */
+/* =============================== */
+.tomatoes{
+    background:#fbfbfb;
+    padding: 30px 0;
+}
+.tomatoes-wrapper{
+    background:#fff;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
+    rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+.tomatoes-content h6{
+    font-size:20px;
+}
+/* =============================== */
+/* Tomatoes css part end  */
+/* =============================== */
+
+/* =============================== */
+/* offer css part start  */
+/* =============================== */
+.offer{
+    margin:40px 0 30px 0;
+}
+/* =============================== */
+/* offer css part end  */
+/* =============================== */
+
+
+/* =============================== */
+/* Food Heaven css part start  */
 /* =============================== */
 /* =============================== */
-/* Categories css part end  */
+/* Food Heaven css part end  */
 /* =============================== */
-
-
-
-
 /* =============================== */
 /* common css  */
 /* =============================== */
