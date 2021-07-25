@@ -199,7 +199,7 @@ a{
     
 }
 .sale2{
-    background:#0068ff;
+    background:var(--btn-color);
 }
 .categories-card:hover .sale2,
 .categories-card:hover .sale{
@@ -457,6 +457,23 @@ transform: scale(0.9);
     box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
     rgba(0, 0, 0, 0.05) 0px 5px 10px;
 }
+.tomatoes-img-item{
+    position: relative;
+}
+.tomatoes-item{
+    position: absolute;
+    top: -13%;
+    left:1%;
+    height:120px;
+    width: 120px;
+    border-radius:50%;
+    text-align: center;
+    display:flex;
+    align-items: center;
+    background: var(--btn-color);
+    color: #fff;
+    cursor: pointer;
+}
 .tomatoes-content h6{
     font-size:20px;
 }
@@ -470,17 +487,143 @@ transform: scale(0.9);
 .offer{
     margin:40px 0 30px 0;
 }
+.offer-card{
+    overflow: hidden;
+    cursor: pointer;
+    background: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 40px 15px 40px 40px;
+}
+.offer-card img{
+    transition: 0.5s;
+}
+.offer-card:hover.offer-card img{
+    transform: scale(1.1);
+}
+.offer-content h5{
+    font-size:20px;
+    font-weight:400;
+}
+.offer-content h2{
+    font-size:45px;
+    font-weight:600;
+    color: var(--btn-color);
+}
 /* =============================== */
 /* offer css part end  */
 /* =============================== */
 
 
+
 /* =============================== */
-/* Food Heaven css part start  */
+/* email css part start  */
 /* =============================== */
+.email{
+    background:rgba(14, 116, 23, 0.363);
+    padding:20px 0;
+    margin:40px 0;
+}
+.input-item .input-group input{
+    border: none;
+    outline:none;
+    background:none;
+    box-shadow: none;
+    background:#fff;
+    padding: 11px;
+}
+.input-item .input-group input:focus {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.input-item .input-group button{
+    background:none;
+    border: none;
+    outline: none;
+    background: rgb(9, 90, 6);
+}
+.input-item .input-group button a i{
+    font-size:25px;
+    color: #fff;
+    padding:0 15px;
+    transition: 0.5s;
+}
+.input-item .input-group button a i:hover{
+    transform:scale(1.1)
+}
 /* =============================== */
-/* Food Heaven css part end  */
+/* email css part end  */
 /* =============================== */
+
+
+
 /* =============================== */
-/* common css  */
+/* footer css part start  */
 /* =============================== */
+footer{
+    background:#fff;
+    margin:30px 0;
+    padding: 30px 0;
+}
+.footer-contact h3,
+.footer-about h3{
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+.footer-contact h3:hover,
+.footer-about h3:hover{
+    color: var(--btn-color);
+}
+.footer-about span{
+    font-size:20px;
+    color:var(--btn-color);
+    font-weight: 600;
+}
+.footer-contact p{
+    padding: 0;
+    margin:10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.footer-contact p:hover{
+    color: var(--btn-color);
+}
+.social a{
+    margin:10px;
+    display:inline-block;
+    height:50px;
+    width: 50px;
+    transition: 0.5s;
+    border-radius:50%;
+    background:#fff;
+   box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px,
+   rgba(0, 0, 0, 0.07) 0px 2px 4px,
+   rgba(0, 0, 0, 0.07) 0px 4px 8px,
+   rgba(0, 0, 0, 0.07) 0px 8px 16px,
+   rgba(0, 0, 0, 0.07) 0px 16px 32px,
+   rgba(0, 0, 0, 0.07) 0px 32px 64px;
+   text-align: center;
+   line-height:50px;
+}
+.social a:hover{
+    background:var(--btn-color);
+    transform: translatey(-10px);
+}
+.social a i{
+    font-size:18px;
+    color: var(--btn-color);
+    transition: 0.5s;
+}
+.social a:hover i{
+    color:#fff;
+}
+.copyright span{
+    cursor: pointer;
+    transition: 0.5s;
+}
+.copyright span:hover{
+    color: var(--btn-color);
+}
+/* =============================== */
+/* footer css part end  */
+/* =============================== */
+
